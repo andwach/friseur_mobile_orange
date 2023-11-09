@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poltawski+Nowy&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+    font-family: "Montserrat", sans-serif;
+    /* font-family: 'Poltawski Nowy', serif; */
+    
+}
+body {
+    /* font-family: myMainFont,sans-serif; */
+    color: #800000;
+    background-color: #fee78a;
+}
+
+ .slogan-top {
+    color: #800000;
+    font-weight: normal;
+    font-size: 3.8rem;
+    margin-top: 16vh;
+    display: flex;
+    justify-content: center;
+   
+} 
+ .sub-title {
+    font-size: 3.8rem;
+    color: #800000;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+
+} 
+.list {
+    text-align: center;
+    list-style: none;
+    margin-top: 60px;
+    line-height: 55px;
+    font-size: 1.2rem;
+    color: #800000;
+}
+.font {
+  font-family: auto;
+}
+.after1::after {
+  font-family: 'Font Awesome 6 Free';
+    content: '\f3cf';
+    font-size: 36px;
+    display: block;
+    font-weight: bold;
+  }
+.after2::after {
+  font-family: 'Font Awesome 5 Free';
+    content: "\f095";
+    font-weight: bold;
+    display: block;
+    font-size: 28px;
+}
+.after3::after {
+  font-family: 'Font Awesome 6 Free';
+    content: "\f0e0";
+    font-weight: bold;
+    display: block;
+    font-size: 28px;
+}
+.after4::after {
+  font-family: 'Font Awesome 5 Free';
+    content: "\f781";
+    font-weight: bold;
+    display: block;
+    font-size: 23px;
+}
+.about {
+    font-weight: normal;
+    margin-left: 48px;
+    color: #800000;
+    margin-top: 154px;
+    font-size: 30px;
+}
+.about-sub {
+    margin-left: 48px;
+    color: #800000;
+    margin-top: 20px;
+    font-size: 18px;
+    font-family: auto;
+    width: 89%;
+    line-height: 24px;
+}
+.impress {
+    margin-left: 48px;
+    color: #800000;
+    margin-top: 80px;
+    font-size: 30px;
+    font-weight: normal;
+    padding-bottom: 20px;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #c1bbbb;
+    /* margin: 20px 0; */
+     margin-bottom: 25px;
+    margin-top: 25px; 
+  }
+  
+.menu__box .menu__box-2 a {
+ font-size: 14px;
+ color: #795548!important;
+}
+
+.sidenav {
+    height: 100%;
+    width: 760px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-image: url("image/fisherman-2739115_1920.jpg");
+    background-size: cover;
+    background-position: 58% 75%;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+   
+  .main {
+    margin-left: 786px; /* Same as the width of the sidenav */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+  }
+
+  .grid-container {
+    display: grid;
+    width: 89%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-gap: 1rem;
+    margin-left: 48px;
+  }
+  .box {
+   height: 34vh;
+}
+.grid1 {
+     background-image: url("image/pexels-jacob-colvin-1757363.jpg"); 
+     background-size: cover;
+     background-position: center;
+}
+.grid2 {
+    background-image: url("image/fisherman-2739115_1920.jpg"); 
+    background-size: cover;
+    background-position: center;
+}
+.grid3 {
+    background-image: url("image/pexels-pixabay-36717.jpg"); 
+    background-size: cover;
+    background-position: center;
+}
+.grid4 {
+   background-image: url("image/showcase.jpg"); 
+   background-size: cover;
+   background-position: center;
+}
+.grid5 {
+    background-image: url("image/pexels-pok-rie-132037.jpg");
+    background-position: center center;
+    background-size: cover;
+    
+}
+.grid6 {
+    background-image: url("image/pexels-andy-vu-3244513.jpg");
+    background-position: center center;
+}
+
+.impr {
+    padding-top: 68px;
+    padding-bottom: 40px;
+    margin: 0;
+    margin-left: 48px;
+    font-size: 16px;
+}
+.impr a {
+    font-size: 12px;
+    color: #800000;
+}
+.footer-box {
+    display: flex;
+    flex-direction: row;
+}
+
+    */
+/*   
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  } */
+
+
+
+  hr {
+    border: 0;
+    border-top: 1px solid #c1bbbb;
+    margin: 20px 0;
+    /* color: black;
+    margin-bottom: 18px;
+    margin-top: 17px; */
+  }
+  
+.menu__box .menu__box-2 a {
+ font-size: 14px;
+ color: #795548!important;
+}
+
+  /* Snappy Sliding Hamburger Menu START */
+ 
+
+#menu__toggle {
+opacity: 0;
+}
+#menu__toggle:checked + .menu__btn > span {
+transform: rotate(45deg);
+}
+#menu__toggle:checked + .menu__btn > span::before {
+top: 0;
+transform: rotate(0deg);
+}
+#menu__toggle:checked + .menu__btn > span::after {
+top: 0;
+transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+right: 0 !important;
+}
+.menu__btn {
+position: fixed;
+top: 30px;
+right: 20px;
+width: 33px;
+height: 26px;
+cursor: pointer;
+z-index: 1;
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+display: block;
+position: absolute;
+width: 100%;
+height: 5px;
+background-color: #616161;
+transition-duration: .25s;
+}
+.menu__btn > span::before {
+content: '';
+top: -10px;
+}
+.menu__btn > span::after {
+content: '';
+top: 10px;
+}
+.menu__box {
+display: block;
+position: fixed;
+top: 0;
+right: -100%;
+width: 1144px;
+height: 100%;
+margin: 0;
+/* padding: 168px 33%; */
+/* padding-left: 27%; */
+padding-top: 11%;
+text-align: center;
+list-style: none;
+background-color: #fbd17c;
+box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+transition-duration: .50s;
+}
+.menu__item {
+display: block;
+padding: 12px 24px;
+color: #795548;
+/* font-family: 'Roboto', sans-serif; */
+font-size: 35px;
+/* font-weight: 600; */
+text-decoration: none;
+transition-duration: .50s;
+}
+.menu__item:hover {
+background-color: #ffffffed;
+}
+
+  /* Snappy Sliding Hamburger Menu END */
